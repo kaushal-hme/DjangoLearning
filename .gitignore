@@ -48,3 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+#virtual environment folder
+django_learning_virtual_environment/
+
