@@ -25,10 +25,9 @@ return render(request, 'polls/index.html', context)
 </pre>
 </code>
 3- we can use get_object_or_404 for either getting or raising an exception. Instead of automaticaly caching.
-example - 
-
 <code> 
 <pre>
+example - 
 
 ### <i>without using get_object_or_404</i>
 
