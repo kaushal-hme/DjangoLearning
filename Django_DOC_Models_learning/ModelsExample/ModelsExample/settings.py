@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'field_type_choice_example.apps.FieldTypeChoiceExampleConfig'
+    'field_type_choice_example.apps.FieldTypeChoiceExampleConfig',
+    'making_queries_example.apps.MakingQueriesExampleConfig'
 ]
 
 MIDDLEWARE = [

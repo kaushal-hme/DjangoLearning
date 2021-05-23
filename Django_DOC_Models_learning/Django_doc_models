@@ -1,0 +1,33 @@
+#Sample model 1 
+#This example model defines a Person, which has a first_name and last_name
+
+from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+
+#myapp_person -> table name 
+#id automatically added
+
+Fields 
+-------
+from django.db import models
+
+class Musician(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    instrument = models.CharField(max_length=100)
+
+class Album(models.Model):
+    artist = models.ForeignKey(Musician, on_delete = models.CASCADE)
+    name = models.CharField(max_length=100)
+    release_date = models.DateField()
+    num_stars = models.IntegerField()
+
+#Each field type should be an instance of appropriate field class.
+
+Field options
+-------------
+null=False (default, if True django store emtpy value as NULL)
+blank=False(default, if True field is allowed to be blank, validation related)
